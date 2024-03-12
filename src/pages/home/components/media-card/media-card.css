@@ -1,6 +1,0 @@
-.img-header {
-    background-image: url('https://raw.githubusercontent.com/maxi-ms/frontend-technical-test/main/assets/placeholder.png');
-    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra completamente el contenedor */
-    background-position: center;
-    height: fit-content;
-}
