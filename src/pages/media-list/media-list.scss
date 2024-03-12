@@ -1,0 +1,65 @@
+.media-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: fit-content;
+    margin: auto;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+@media (max-width: $sm) {
+    .media-list .p-card {
+      flex-basis: calc(100% - 1rem);
+      max-width: calc(100% - 1rem); 
+    }
+  }
+  
+  @media (min-width: $sm) and (max-width: $md) {
+    .media-list .p-card {
+      flex-basis: calc(50% - 1rem); 
+      max-width: calc(50% - 1rem);  
+    }
+  }
+  
+  @media (min-width: $md) and (max-width: $lg) {
+    .media-list .p-card {
+      flex-basis: calc(33% - 1rem); 
+      max-width: calc(33% - 1rem);  
+    }
+  }
+  
+  @media (min-width: $lg) and (max-width: $xl) {
+    .media-list .p-card {
+      flex-basis: calc(25% - 1rem);
+      max-width: calc(25% - 1rem); 
+    }
+  }
+  
+  @media (min-width: $xl) {
+    .media-list .p-card {
+      flex-basis: calc(20% - 1rem); 
+      max-width: calc(20% - 1rem);  
+    }
+  }
+  
+  .list-card {  
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+      border: 1px solid #00a3ff;
+    }
+  }
+  .popup-card {
+    width: 30vw;
+  }
+  .info-card-img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+  }
